@@ -1,0 +1,76 @@
+/* ============================================
+   FLOATING.CSS — Botão flutuante (desktop)
+   e barra fixa de ação (mobile)
+   ============================================ */
+
+/* --- BOTÃO WHATSAPP FLUTUANTE (desktop/tablet) --- */
+.wa-float {
+  position: fixed;
+  right: var(--space-6);
+  bottom: var(--space-6);
+  z-index: var(--z-float);
+  display: none;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-6) var(--space-4) var(--space-5);
+  background-color: var(--color-whatsapp);
+  color: var(--color-whatsapp-ink);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.04em;
+  box-shadow: 0 10px 34px rgba(37, 211, 102, 0.4);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.wa-float::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 2px solid var(--color-whatsapp);
+  animation: waRing 2.4s ease-out infinite;
+}
+
+.wa-float:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 14px 40px rgba(37, 211, 102, 0.55);
+}
+
+.wa-float .icon {
+  width: 26px;
+  height: 26px;
+}
+
+@keyframes waRing {
+  0%   { transform: scale(1);    opacity: 0.7; }
+  100% { transform: scale(1.35); opacity: 0; }
+}
+
+/* --- BARRA FIXA MOBILE --- */
+.mobile-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: var(--z-float);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-3) calc(var(--space-3) + env(safe-area-inset-bottom));
+  background-color: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid var(--color-border);
+}
+
+.mobile-bar .btn {
+  padding: var(--space-3) var(--space-2);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+  .wa-float   { display: inline-flex; }
+  .mobile-bar { display: none; }
+}

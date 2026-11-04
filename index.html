@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>GAMEC Oficina Mecânica | Mecânica na Cidade Dutra — Zona Sul de SP</title>
+  <meta name="description" content="Oficina mecânica multimarcas na Cidade Dutra, São Paulo. Revisão, freios, parte elétrica e diagnóstico com transparência. Nota 5,0 no Google. Agende pelo WhatsApp." />
+  <meta name="author" content="GAMEC Oficina Mecânica" />
+  <meta name="theme-color" content="#09090a" />
+  <!-- TROQUE pelo domínio final do site -->
+  <link rel="canonical" href="https://oficinagamec.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:locale"      content="pt_BR" />
+  <meta property="og:url"         content="https://oficinagamec.com/" />
+  <meta property="og:title"       content="GAMEC Oficina Mecânica — Mecânica de confiança na Zona Sul de SP" />
+  <meta property="og:description" content="Revisão, freios, elétrica e diagnóstico para todas as marcas. Nota 5,0 no Google. Agende pelo WhatsApp." />
+  <!-- Quando tiver uma foto boa, publique em https://SEU-DOMINIO/assets/images/og-image.jpg e descomente:
+  <meta property="og:image" content="https://oficinagamec.com/assets/images/og-image.jpg" /> -->
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Dados estruturados (Google Maps / busca local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "GAMEC Oficina Mecânica",
+    "description": "Oficina mecânica multimarcas na Cidade Dutra, Zona Sul de São Paulo.",
+    "telephone": "+55-11-3457-7464",
+    "email": "oficinagamec@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Sen. Teotônio Vilela, 2376",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "04801-000",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }],
+    "areaServed": "Zona Sul de São Paulo",
+    "sameAs": ["https://instagram.com/oficinagamec", "https://youtube.com/@oficinagamec"]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       SPRITE DE ÍCONES (usado com <use href="#i-nome">)
+       ============================================================ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></symbol>
+      <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.56 49.56 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+      <symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+      <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+      <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+      <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m10.7 12.3 9.8-9.8M16 7l3 3M14 9l2 2"/></symbol>
+      <symbol id="i-brake" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="6.2" r=".6"/><circle cx="12" cy="17.8" r=".6"/><circle cx="6.2" cy="12" r=".6"/><circle cx="17.8" cy="12" r=".6"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+      <symbol id="i-battery" viewBox="0 0 24 24"><rect x="2" y="7" width="17" height="11" rx="2"/><path d="M22 11v3M7 12.5h5M9.5 10v5"/></symbol>
+      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></symbol>
+      <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
+      <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+      <symbol id="i-spring" viewBox="0 0 24 24"><path d="M8 3h8M12 3v2M6 8l12 2-12 3 12 3-12 3M12 19v2M8 21h8"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></symbol>
+      <symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+      <symbol id="i-car-multi" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M9 21v-6h6v6"/></symbol>
+    </defs>
+  </svg>
+
+
+  <!-- ============================================================
+       BARRA SUPERIOR
+       ============================================================ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__status" data-status data-open="false">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="status-text">Seg–Sex · 08h às 18h</span>
+      </p>
+      <div class="topbar__links">
+        <a href="https://www.google.com/maps/search/?api=1&query=Gamec+Oficina+Mec%C3%A2nica+Av.+Sen.+Teot%C3%B4nio+Vilela+2376+Cidade+Dutra" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+          Av. Sen. Teotônio Vilela, 2376 — Cidade Dutra
+        </a>
+        <a href="tel:+551134577464">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+          (11) 3457-7464
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+
+        <a href="#inicio" class="header__logo" aria-label="GAMEC Oficina Mecânica — início">
+          <span class="header__logo-mark" aria-hidden="true">G</span>
+          <span class="header__logo-text">
+            <span class="header__logo-name">GAMEC</span>
+            <span class="header__logo-sub">Oficina Mecânica</span>
+          </span>
+        </a>
+
+        <nav class="header__nav" aria-label="Navegação principal">
+          <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Por que a GAMEC</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#faq">Dúvidas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20GAMEC." target="_blank" rel="noopener" class="btn btn--whatsapp header__cta">
+          <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          Agendar
+        </a>
+
+        <button class="header__menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </div>
+
+  </header>
+
+  <nav class="header__mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <a href="#servicos">Serviços</a>
+    <a href="#sobre">Por que a GAMEC</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#avaliacoes">Avaliações</a>
+    <a href="#faq">Dúvidas</a>
+    <a href="#contato">Contato</a>
+    <a href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20GAMEC." target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">
+      <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+      Agendar pelo WhatsApp
+    </a>
+    </nav>
+
+
+  <main>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="inicio" aria-label="Apresentação">
+    <svg class="hero__gear" viewBox="0 0 400 400" aria-hidden="true" fill="none" stroke="currentColor">
+      <circle cx="200" cy="200" r="168" stroke-width="44" stroke-dasharray="34.4 34.4"/>
+      <circle cx="200" cy="200" r="146" stroke-width="10"/>
+      <circle cx="200" cy="200" r="64"  stroke-width="10"/>
+      <circle cx="200" cy="200" r="22"  stroke-width="8"/>
+      <path d="M200 64v72M200 264v72M64 200h72M264 200h72M104 104l50 50M246 246l50 50M296 104l-50 50M154 246l-50 50" stroke-width="10"/>
+    </svg>
+
+    <div class="container">
+      <div class="hero__grid">
+
+        <div class="hero__content">
+          <span class="hero__eyebrow anim-fade-up">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+            Cidade Dutra · Zona Sul de São Paulo
+          </span>
+
+          <h1 class="hero__title anim-fade-up anim-fade-up--delay-1">
+            Mecânica de confiança
+            <em>na Zona Sul de SP.</em>
+          </h1>
+
+          <p class="hero__text anim-fade-up anim-fade-up--delay-2">
+            Revisão, freios, parte elétrica, diagnóstico e muito mais para <strong>todas as marcas</strong>.
+            Atendimento honesto, orçamento claro e o seu carro entregue do jeito que você espera.
+          </p>
+
+          <div class="hero__actions anim-fade-up anim-fade-up--delay-3">
+            <a href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20GAMEC." target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">
+              <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Agendar pelo WhatsApp
+            </a>
+            <a href="tel:+551134577464" class="btn btn--outline btn--lg">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              Ligar agora
+            </a>
+          </div>
+
+          <div class="hero__trust anim-fade-up anim-fade-up--delay-3">
+            <div class="trust-item">
+              <span class="stars" aria-hidden="true">
+                <svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg><svg class="icon icon--fill"><use href="#i-star"/></svg>
+              </span>
+              <span><strong>5,0 no Google</strong> 189 avaliações</span>
+            </div>
+            <div class="trust-item">
+              <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+              <span><strong>Desde 2012</strong> cuidando do seu carro</span>
+            </div>
+            <div class="trust-item">
+              <svg class="icon" aria-hidden="true"><use href="#i-car"/></svg>
+              <span><strong>Multimarcas</strong> todos os modelos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Orçamento rápido: monta a mensagem e abre o WhatsApp -->
+        <aside class="quote anim-fade-up anim-fade-up--delay-2" aria-label="Orçamento rápido">
+          <span class="quote__badge">
+            <span class="status-dot" style="background:var(--color-success)" aria-hidden="true"></span>
+            Resposta rápida
+          </span>
+          <h2 class="quote__title">Peça seu orçamento</h2>
+          <p class="quote__text">Preencha em 30 segundos e continue a conversa direto no WhatsApp.</p>
+
+          <form id="quote-form" novalidate>
+            <div class="form-field">
+              <label for="f-nome">Seu nome</label>
+              <input id="f-nome" name="nome" type="text" placeholder="Como podemos te chamar?" autocomplete="given-name" required />
+            </div>
+            <div class="form-field">
+              <label for="f-veiculo">Seu carro</label>
+              <input id="f-veiculo" name="veiculo" type="text" placeholder="Ex.: Honda Fit 2012" required />
+            </div>
+            <div class="form-field">
+              <label for="f-servico">O que você precisa?</label>
+              <select id="f-servico" name="servico">
+                <option>Revisão completa</option>
+                <option>Freios</option>
+                <option>Parte elétrica</option>
+                <option>Diagnóstico / scanner</option>
+                <option>Bateria</option>
+                <option>Suspensão e direção</option>
+                <option>Troca de óleo e filtros</option>
+                <option>Outro / não sei o problema</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--whatsapp btn--lg btn--block">
+              <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Enviar pelo WhatsApp
+            </button>
+            <p class="quote__note">Sem compromisso. Você conversa direto com a equipe.</p>
+          </form>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="hazard" aria-hidden="true"></div>
+
+
+  <!-- ============================================================
+       MARCAS
+       ============================================================ -->
+  <section class="brands" aria-label="Marcas atendidas">
+    <div class="container brands__inner">
+      <span class="brands__label">Atendemos todas as marcas</span>
+      <div class="brands__viewport">
+        <ul class="brands__track">
+          <li>Chevrolet</li>
+          <li>Volkswagen</li>
+          <li>Fiat</li>
+          <li>Ford</li>
+          <li>Honda</li>
+          <li>Toyota</li>
+          <li>Hyundai</li>
+          <li>Renault</li>
+          <li>Nissan</li>
+          <li>Jeep</li>
+          <li>Peugeot</li>
+          <li>Citroën</li>
+          <li>Mitsubishi</li>
+          <li>Kia</li>
+          <li aria-hidden="true">Chevrolet</li>
+          <li aria-hidden="true">Volkswagen</li>
+          <li aria-hidden="true">Fiat</li>
+          <li aria-hidden="true">Ford</li>
+          <li aria-hidden="true">Honda</li>
+          <li aria-hidden="true">Toyota</li>
+          <li aria-hidden="true">Hyundai</li>
+          <li aria-hidden="true">Renault</li>
+          <li aria-hidden="true">Nissan</li>
+          <li aria-hidden="true">Jeep</li>
+          <li aria-hidden="true">Peugeot</li>
+          <li aria-hidden="true">Citroën</li>
+          <li aria-hidden="true">Mitsubishi</li>
+          <li aria-hidden="true">Kia</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVIÇOS
+       ============================================================ -->
+  <section class="section" id="servicos">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-eyebrow">O que fazemos</span>
+        <h2 class="section-title">Nossos <span>serviços</span></h2>
+        <p class="section-subtitle">Tudo o que o seu carro precisa em um só lugar, com diagnóstico claro antes de qualquer serviço.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <article class="service-card reveal">
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg></div>
+          <h3 class="service-card__title">Revisão completa</h3>
+          <p class="service-card__text">Checagem de itens de segurança e desgaste para você rodar tranquilo, seja na cidade ou na estrada.</p>
+          <a class="service-card__link" href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Quero%20fazer%20a%20revis%C3%A3o%20completa%20do%20meu%20carro.%20Podem%20me%20passar%20um%20or%C3%A7amento%3F" target="_blank" rel="noopener">Pedir orçamento <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card reveal" style="--delay:80ms">
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-brake"/></svg></div>
+          <h3 class="service-card__title">Freios</h3>
+          <p class="service-card__text">Pastilhas, discos, fluido e sistema completo. Segurança não se negocia, a gente cuida com atenção.</p>
+          <a class="service-card__link" href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Preciso%20de%20um%20or%C3%A7amento%20para%20os%20freios%20do%20meu%20carro." target="_blank" rel="noopener">Pedir orçamento <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card reveal" style="--delay:160ms">
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-gauge"/></svg></div>
+          <h3 class="service-card__title">Diagnóstico</h3>
+          <p class="service-card__text">Luz acesa no painel, barulho estranho ou falha? Encontramos a causa real antes de trocar qualquer peça.</p>
+          <a class="service-card__link" href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Meu%20carro%20est%C3%A1%20com%20um%20problema%20e%20preciso%20de%20um%20diagn%C3%B3stico." target="_blank" rel="noopener">Agendar diagnóstico <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card reveal" style="--delay:240ms">
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg></div>
+          <h3 class="service-card__title">Parte elétrica</h3>
+          <p class="service-card__text">Falhas elétricas, iluminação, alternador, motor de partida e tudo que depende de energia no seu carro.</p>
+          <a class="service-card__link" href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Meu%20carro%20est%C3%A1%20com%20problema%20el%C3%A9trico.%20Podem%20me%20ajudar%3F" target="_blank" rel="noopener">Pedir orçamento <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-battery"/></svg></div>
+          <h3 class="service-card__title">Bateria</h3>
+          <p class="service-card__text">Teste e troca de bateria. Pare de ser pego de surpresa com o carro que não pega pela manhã.</p>
+          <a class="service-card__link" href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Quero%20testar%20ou%20trocar%20a%20bateria%20do%20meu%20carro." target="_blank" rel="noopener">Pedir orçamento <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card reveal" style="--delay:80ms">
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-spring"/></svg></div>
+          <h3 class="service-card__title">Suspensão e direção</h3>
+          <p class="service-card__text">Batidas, volante puxando ou carro instável? Avaliamos e corrigimos para devolver conforto e segurança.</p>
+          <a class="service-card__link" href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Preciso%20avaliar%20a%20suspens%C3%A3o%2Fdire%C3%A7%C3%A3o%20do%20meu%20carro." target="_blank" rel="noopener">Pedir orçamento <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card reveal" style="--delay:160ms">
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-filter"/></svg></div>
+          <h3 class="service-card__title">Filtros de ar e cabine</h3>
+          <p class="service-card__text">Troca de filtro de ar e de cabine para o motor respirar melhor e o ar do carro ficar limpo.</p>
+          <a class="service-card__link" href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Quero%20trocar%20os%20filtros%20de%20ar%20e%20de%20cabine%20do%20meu%20carro." target="_blank" rel="noopener">Pedir orçamento <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="service-card reveal" style="--delay:240ms">
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-drop"/></svg></div>
+          <h3 class="service-card__title">Óleo e fluidos</h3>
+          <p class="service-card__text">Troca de óleo e filtros e conferência dos fluidos, o jeito mais barato de proteger o motor.</p>
+          <a class="service-card__link" href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Quero%20fazer%20a%20troca%20de%20%C3%B3leo%20e%20filtros%20do%20meu%20carro." target="_blank" rel="noopener">Pedir orçamento <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+      </div>
+
+      <div class="services__footer reveal">
+        <p>Não encontrou o que procura? Descreva o problema e a gente te orienta.</p>
+        <a href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Meu%20carro%20precisa%20de%20um%20servi%C3%A7o%20que%20n%C3%A3o%20est%C3%A1%20na%20lista." target="_blank" rel="noopener" class="btn btn--outline">
+          <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+          Falar com a equipe
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SOBRE / POR QUE A GAMEC
+       ============================================================ -->
+  <section class="section section--alt" id="sobre">
+    <div class="container">
+      <div class="about__grid">
+
+        <div class="about__media reveal">
+          <div class="about__image">
+            <img src="assets/images/oficina.jpg" alt="Interior da oficina GAMEC com carro no elevador" width="546" height="404" loading="lazy" />
+          </div>
+          <div class="about__since">
+            <strong>2012</strong>
+            <span>Cuidando de<br>carros desde</span>
+          </div>
+        </div>
+
+        <div class="about__content reveal" style="--delay:100ms">
+          <div class="section-header">
+            <span class="section-eyebrow">Por que a GAMEC</span>
+            <h2 class="section-title">Oficina onde você <span>entende o que está pagando</span></h2>
+            <p class="section-subtitle">Sem enrolação e sem serviço desnecessário. Explicamos o problema, o que é urgente e o que pode esperar.</p>
+          </div>
+
+          <div class="about__features">
+            <div class="feature">
+              <span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg></span>
+              <div>
+                <h3 class="feature__title">Diagnóstico transparente</h3>
+                <p class="feature__text">Você sabe exatamente o que o carro tem antes de aprovar qualquer serviço.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-smile"/></svg></span>
+              <div>
+                <h3 class="feature__title">Atendimento atencioso</h3>
+                <p class="feature__text">Cada cliente é único. Atendemos com respeito, clareza e sem pressa.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-trend"/></svg></span>
+              <div>
+                <h3 class="feature__title">Equipe em evolução</h3>
+                <p class="feature__text">Treinamento constante para acompanhar a tecnologia dos carros de hoje.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <span class="feature__icon"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg></span>
+              <div>
+                <h3 class="feature__title">Todas as marcas</h3>
+                <p class="feature__text">Popular, sedã, SUV ou importado: atendemos veículos multimarcas.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat"><span class="stat__value">5,0<small>★</small></span><span class="stat__label">Nota no Google</span></div>
+        <div class="stat"><span class="stat__value">189</span><span class="stat__label">Avaliações</span></div>
+        <div class="stat"><span class="stat__value">2012</span><span class="stat__label">Desde</span></div>
+        <div class="stat"><span class="stat__value">100%</span><span class="stat__label">Multimarcas</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       COMO FUNCIONA
+       ============================================================ -->
+  <section class="section" id="como-funciona">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Simples e rápido</span>
+        <h2 class="section-title">Como <span>funciona</span></h2>
+        <p class="section-subtitle">Do primeiro contato até a entrega, você acompanha cada etapa.</p>
+      </div>
+
+      <div class="process__grid">
+        <div class="step reveal">
+          <div class="step__icon"><svg class="icon" aria-hidden="true"><use href="#i-message"/></svg></div>
+          <h3 class="step__title">Chame no WhatsApp</h3>
+          <p class="step__text">Conte o que está acontecendo e escolha o melhor dia e horário para trazer o carro.</p>
+        </div>
+        <div class="step reveal" style="--delay:100ms">
+          <div class="step__icon"><svg class="icon" aria-hidden="true"><use href="#i-car"/></svg></div>
+          <h3 class="step__title">Traga o carro</h3>
+          <p class="step__text">Recebemos você na Cidade Dutra e registramos tudo o que foi relatado.</p>
+        </div>
+        <div class="step reveal" style="--delay:200ms">
+          <div class="step__icon"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg></div>
+          <h3 class="step__title">Diagnóstico e orçamento</h3>
+          <p class="step__text">Explicamos o problema com clareza e o serviço só começa depois da sua aprovação.</p>
+        </div>
+        <div class="step reveal" style="--delay:300ms">
+          <div class="step__icon"><svg class="icon" aria-hidden="true"><use href="#i-key"/></svg></div>
+          <h3 class="step__title">Serviço feito, carro entregue</h3>
+          <p class="step__text">Avisamos quando estiver pronto e você retira com tudo explicado.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       AVALIAÇÕES
+       ============================================================ -->
+  <section class="section section--alt" id="avaliacoes">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Prova social</span>
+        <h2 class="section-title">Quem leva o carro, <span>recomenda</span></h2>
+        <p class="section-subtitle">A nota máxima no Google é resultado de atendimento honesto, um cliente de cada vez.</p>
+      </div>
+
+      <div class="reviews__grid">
+
+        <div class="rating-card reveal">
+          <span class="rating-card__google">
+            <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg>
+            Avaliações no Google
+          </span>
+          <span class="rating-card__score">5,0</span>
+          <span class="stars" aria-label="5 de 5 estrelas">
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="icon icon--fill" aria-hidden="true"><use href="#i-star"/></svg>
+          </span>
+          <p class="rating-card__count">Baseado em <strong>189 avaliações</strong></p>
+          <a class="btn btn--outline" href="https://www.google.com/maps/search/?api=1&query=Gamec+Oficina+Mec%C3%A2nica+Av.+Sen.+Teot%C3%B4nio+Vilela+2376+Cidade+Dutra" target="_blank" rel="noopener">
+            Ler avaliações no Google
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+
+        <div class="reviews__points">
+          <div class="point reveal">
+            <svg class="icon point__icon" aria-hidden="true"><use href="#i-shield"/></svg>
+            <div>
+              <h3 class="point__title">Honestidade no diagnóstico</h3>
+              <p class="point__text">Só indicamos o que o carro realmente precisa. Confiança vem de transparência.</p>
+            </div>
+          </div>
+          <div class="point reveal" style="--delay:100ms">
+            <svg class="icon point__icon" aria-hidden="true"><use href="#i-smile"/></svg>
+            <div>
+              <h3 class="point__title">Atendimento que faz a diferença</h3>
+              <p class="point__text">Você é tratado como cliente de longa data, desde a primeira visita.</p>
+            </div>
+          </div>
+          <div class="point reveal" style="--delay:200ms">
+            <svg class="icon point__icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+            <div>
+              <h3 class="point__title">Relacionamento de longo prazo</h3>
+              <p class="point__text">Mais de uma década atendendo a Zona Sul. Queremos ser a oficina da sua família.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== DEPOIMENTOS REAIS (opcional) =====
+             Copie 3 avaliações reais do Google (com permissão) e use este modelo:
+
+        <div class="testimonial">
+          <span class="stars"><svg class="icon icon--fill"><use href="#i-star"/></svg>... x5</span>
+          <p class="testimonial__text">“Texto da avaliação”</p>
+          <p class="testimonial__author">Nome do cliente</p>
+        </div>
+        -->
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CTA BANNER
+       ============================================================ -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <h2 class="cta-banner__title">Seu carro está dando sinais?</h2>
+        <p class="cta-banner__text">Barulho, luz no painel ou revisão atrasada. Quanto antes o diagnóstico, menor o custo. Fale com a gente agora.</p>
+        <div class="cta-banner__actions">
+          <a href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Meu%20carro%20est%C3%A1%20dando%20sinais%20de%20problema.%20Posso%20agendar%20uma%20avalia%C3%A7%C3%A3o%3F" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">
+            <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Chamar no WhatsApp
+          </a>
+          <a href="tel:+551134577464" class="btn btn--outline btn--lg">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+            (11) 3457-7464
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FAQ
+       ============================================================ -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Dúvidas frequentes</span>
+        <h2 class="section-title">Perguntas <span>frequentes</span></h2>
+      </div>
+
+      <div class="faq__list reveal">
+
+        <details class="faq__item">
+          <summary class="faq__question">Vocês atendem todas as marcas de carro?
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <p class="faq__answer">Sim. A GAMEC é uma oficina multimarcas. Chame no WhatsApp informando marca, modelo e ano do seu carro e confirmamos o atendimento.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">Preciso agendar horário?
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <p class="faq__answer">Recomendamos agendar pelo <a href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20GAMEC." target="_blank" rel="noopener">WhatsApp</a> para você ser atendido sem espera e com a equipe preparada para o seu caso.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">Como funciona o orçamento?
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <p class="faq__answer">Fazemos o diagnóstico, explicamos o que foi encontrado e passamos o orçamento. O serviço só começa depois da sua aprovação.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">Qual o horário de funcionamento?
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <p class="faq__answer">De segunda a sexta-feira, das 08h às 18h.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">Onde fica a oficina?
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <p class="faq__answer">Na Av. Sen. Teotônio Vilela, 2376, Cidade Dutra, São Paulo – SP (CEP 04801-000). Atendemos Cidade Dutra, Interlagos, Grajaú, Socorro e toda a Zona Sul.</p>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__question">Meu carro está com um problema e não sei o que é. E agora?
+            <svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <p class="faq__answer">Sem problema. Descreva o que está acontecendo (barulho, luz no painel, falha) pelo WhatsApp e orientamos o melhor caminho para o diagnóstico.</p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTATO
+       ============================================================ -->
+  <section class="section" id="contato">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-eyebrow">Fale conosco</span>
+        <h2 class="section-title">Venha nos <span>visitar</span></h2>
+      </div>
+
+      <div class="contact__grid">
+
+        <div class="contact__info reveal">
+          <h3 class="contact__info-title">Vamos conversar?</h3>
+          <p class="contact__info-text">O jeito mais rápido é o WhatsApp. Se preferir, ligue ou passe aqui na oficina.</p>
+
+          <div class="contact__items">
+            <div class="contact__item">
+              <span class="contact__item-icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <div>
+                <p class="contact__item-label">Endereço</p>
+                <p class="contact__item-value">Av. Sen. Teotônio Vilela, 2376<br>Cidade Dutra, São Paulo – SP · 04801-000</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__item-icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <div>
+                <p class="contact__item-label">Telefone / WhatsApp</p>
+                <p class="contact__item-value">
+                  <a href="tel:+551134577464">(11) 3457-7464</a><br>
+                  <a href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">(11) 93901-3340</a> (WhatsApp)
+                </p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__item-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <div>
+                <p class="contact__item-label">E-mail</p>
+                <p class="contact__item-value"><a href="mailto:oficinagamec@gmail.com">oficinagamec@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <span class="contact__item-icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+              <div>
+                <p class="contact__item-label">Horário de atendimento</p>
+                <p class="contact__item-value">Segunda a sexta · 08h às 18h</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__actions">
+            <a href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20GAMEC." target="_blank" rel="noopener" class="btn btn--whatsapp">
+              <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Agendar no WhatsApp
+            </a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Gamec+Oficina+Mec%C3%A2nica+Av.+Sen.+Teot%C3%B4nio+Vilela+2376+Cidade+Dutra" target="_blank" rel="noopener" class="btn btn--outline">
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+              Como chegar
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__map reveal" style="--delay:100ms">
+          <iframe
+            title="Mapa — GAMEC Oficina Mecânica, Cidade Dutra"
+            src="https://www.google.com/maps?q=Av.+Sen.+Teot%C3%B4nio+Vilela,+2376,+Cidade+Dutra,+S%C3%A3o+Paulo&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="#inicio" class="header__logo" aria-label="GAMEC — voltar ao topo">
+            <span class="header__logo-mark" aria-hidden="true">G</span>
+            <span class="header__logo-text">
+              <span class="header__logo-name">GAMEC</span>
+              <span class="header__logo-sub">Oficina Mecânica</span>
+            </span>
+          </a>
+          <p>Mecânica de confiança na Cidade Dutra, Zona Sul de São Paulo. Revisão, reparo e manutenção de veículos multimarcas desde 2012.</p>
+          <div class="footer__social">
+            <a href="https://instagram.com/oficinagamec" target="_blank" rel="noopener" aria-label="Instagram da GAMEC"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+            <a href="https://youtube.com/@oficinagamec" target="_blank" rel="noopener" aria-label="YouTube da GAMEC"><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg></a>
+            <a href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="WhatsApp da GAMEC"><svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Navegação</h3>
+          <ul class="footer__list">
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Por que a GAMEC</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#faq">Dúvidas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Serviços</h3>
+          <ul class="footer__list">
+            <li>Revisão completa</li>
+            <li>Freios</li>
+            <li>Diagnóstico</li>
+            <li>Parte elétrica</li>
+            <li>Bateria</li>
+            <li>Suspensão e direção</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Contato</h3>
+          <ul class="footer__list">
+            <li>Av. Sen. Teotônio Vilela, 2376<br>Cidade Dutra, São Paulo – SP</li>
+            <li><a href="tel:+551134577464">(11) 3457-7464</a></li>
+            <li><a href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">(11) 93901-3340 · WhatsApp</a></li>
+            <li>Seg–Sex · 08h às 18h</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© <span id="year">2026</span> GAMEC Oficina Mecânica. Todos os direitos reservados.</span>
+        <span>Cidade Dutra · Zona Sul · São Paulo</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       AÇÕES FIXAS: WhatsApp flutuante (desktop) e barra (mobile)
+       ============================================================ -->
+  <a href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20GAMEC." target="_blank" rel="noopener" class="wa-float" aria-label="Falar no WhatsApp">
+    <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+    Fale com a gente
+  </a>
+
+  <div class="mobile-bar">
+    <a href="tel:+551134577464" class="btn btn--outline">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+      Ligar
+    </a>
+    <a href="https://wa.me/5511939013340?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20GAMEC." target="_blank" rel="noopener" class="btn btn--whatsapp">
+      <svg class="icon icon--fill" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+      Agendar no WhatsApp
+    </a>
+  </div>
+
+  <!-- JS -->
+  <script src="js/menu.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/luxury.js"></script>
+
+</body>
+</html>

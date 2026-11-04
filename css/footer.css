@@ -1,0 +1,100 @@
+/* ============================================
+   FOOTER.CSS — Rodapé
+   ============================================ */
+
+.footer {
+  background-color: #000;
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-16);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-10);
+  padding-bottom: var(--space-12);
+}
+
+.footer__brand p {
+  margin-top: var(--space-5);
+  max-width: 340px;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.footer__title {
+  font-size: var(--text-lg);
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-5);
+  color: var(--color-text-primary);
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.footer__list a {
+  transition: color var(--transition-fast);
+}
+
+.footer__list a:hover {
+  color: var(--color-accent-hover);
+}
+
+.footer__social {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.footer__social a {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  color: var(--color-text-secondary);
+  transition: all var(--transition-normal);
+}
+
+.footer__social a:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.footer__bottom {
+  border-top: 1px solid var(--color-border);
+  padding-block: var(--space-6);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.footer__bottom .container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+    gap: var(--space-8);
+  }
+
+  .footer__bottom .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Espaço para a barra fixa do mobile não cobrir o rodapé */
+@media screen and (max-width: 767px) {
+  .footer { padding-bottom: 72px; }
+}
